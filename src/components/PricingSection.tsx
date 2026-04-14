@@ -48,7 +48,7 @@ const plans = [
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="py-20 md:py-28 bg-slate-900">
+    <section id="pricing" className="scroll-mt-[var(--header-scroll-offset)] py-20 md:py-28 bg-slate-900">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold uppercase tracking-widest text-indigo-400 mb-3">

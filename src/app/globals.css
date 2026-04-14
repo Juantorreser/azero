@@ -3,6 +3,8 @@
 :root {
   --background: #0d1525;
   --foreground: #f8fafc;
+  /* Fixed nav + minimal gap — sections land higher (tighter under the bar) */
+  --header-scroll-offset: 0.5rem;
 }
 
 @theme inline {
@@ -18,6 +20,13 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-scroll-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 @keyframes fadeInUp {

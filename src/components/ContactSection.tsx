@@ -23,7 +23,7 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-slate-900">
+    <section id="contact" className="scroll-mt-[var(--header-scroll-offset)] py-20 md:py-28 bg-slate-900">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left: copy */}

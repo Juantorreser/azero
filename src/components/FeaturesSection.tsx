@@ -63,7 +63,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 md:py-28 bg-[#0d1525]">
+    <section id="features" className="scroll-mt-[var(--header-scroll-offset)] py-20 md:py-28 bg-[#0d1525]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold uppercase tracking-widest text-indigo-400 mb-3">
@@ -91,6 +91,18 @@ export function FeaturesSection() {
               <p className="text-sm text-slate-500 leading-relaxed">{feature.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-14 text-center">
+          <a
+            href="#pricing"
+            className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-blue-950/50 transition-all hover:bg-blue-500"
+          >
+            View plans &amp; pricing
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>

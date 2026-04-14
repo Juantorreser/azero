@@ -6,8 +6,7 @@ const problems = [
       </svg>
     ),
     title: "Outdated or slow websites",
-    description:
-      "Most small business sites are years old, load slowly on mobile, and hurt your reputation before you even get a chance.",
+    description: "Slow, dated pages—especially on mobile—erode trust before you ever talk to a lead.",
   },
   {
     icon: (
@@ -16,8 +15,7 @@ const problems = [
       </svg>
     ),
     title: "No clear call-to-action",
-    description:
-      "Visitors land on your page but don't know what to do next. No button, no form, no direction — just a missed opportunity.",
+    description: "No obvious next step—so visitors leave without booking, calling, or filling a form.",
   },
   {
     icon: (
@@ -26,8 +24,7 @@ const problems = [
       </svg>
     ),
     title: "Visitors leave without contacting",
-    description:
-      "No follow-up, no capture, no conversion. People browse your site and leave — you never hear from them again.",
+    description: "Nothing captures the visit—so you never get the name, number, or follow-up.",
   },
   {
     icon: (
@@ -36,14 +33,13 @@ const problems = [
       </svg>
     ),
     title: "No website at all",
-    description:
-      "You're invisible online. When a potential client searches for your service, they find your competitor — not you.",
+    description: "You don’t show up in search the way competitors do—so they get the call first.",
   },
 ];
 
 export function ProblemSection() {
   return (
-    <section className="py-20 md:py-28 bg-slate-900">
+    <section id="problem" className="scroll-mt-[var(--header-scroll-offset)] py-20 md:py-28 bg-slate-900">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-14">
           <p className="text-sm font-semibold uppercase tracking-widest text-indigo-400 mb-3">
@@ -62,15 +58,15 @@ export function ProblemSection() {
           {problems.map((problem, i) => (
             <div
               key={i}
-              className="bg-slate-800/60 rounded-2xl p-6 border border-slate-700/60 hover:border-slate-600 hover:bg-slate-800 hover:-translate-y-0.5 transition-all duration-200"
+              className="bg-slate-800/60 rounded-2xl border border-slate-700/60 p-6 text-center transition-all duration-200 hover:border-slate-600 hover:bg-slate-800 hover:-translate-y-0.5"
             >
-              <div className="w-12 h-12 bg-red-950/50 text-red-400 border border-red-900/40 rounded-xl flex items-center justify-center mb-4">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-red-900/40 bg-red-950/50 text-red-400">
                 {problem.icon}
               </div>
-              <h3 className="font-bold text-white mb-2 text-base leading-snug">
+              <h3 className="mb-2 text-base font-bold leading-snug text-white">
                 {problem.title}
               </h3>
-              <p className="text-sm text-slate-500 leading-relaxed">
+              <p className="text-sm leading-relaxed text-slate-500">
                 {problem.description}
               </p>
             </div>

@@ -5,7 +5,7 @@ const highlights = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "No upfront cost",
+    title: "$0 upfront cost",
     description: "Start with zero risk. Pay only your monthly subscription — no setup fees, no hidden charges.",
     color: "bg-green-950/50 text-green-400 border border-green-900/40",
   },
@@ -33,7 +33,7 @@ const highlights = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 md:py-28 bg-[#0d1525]">
+    <section id="solution" className="scroll-mt-[var(--header-scroll-offset)] py-20 md:py-28 bg-[#0d1525]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text */}
@@ -52,10 +52,10 @@ export function SolutionSection() {
             </p>
 
             <a
-              href="#contact"
+              href="#how-it-works"
               className="inline-flex items-center gap-2 bg-blue-600 text-white px-7 py-4 rounded-full text-base font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-950/50"
             >
-              Get started today
+              How it works
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
               </svg>

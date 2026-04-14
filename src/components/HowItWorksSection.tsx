@@ -33,7 +33,7 @@ const steps = [
 
 export function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-20 md:py-28 bg-slate-900">
+    <section id="how-it-works" className="scroll-mt-[var(--header-scroll-offset)] py-20 md:py-28 bg-slate-900">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-indigo-400 mb-3">
@@ -69,10 +69,10 @@ export function HowItWorksSection() {
 
         <div className="mt-14 text-center">
           <a
-            href="#contact"
+            href="#features"
             className="inline-flex items-center gap-2 bg-blue-600 text-white px-7 py-4 rounded-full text-base font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-950/50"
           >
-            Start the process
+            What&apos;s included
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
             </svg>
