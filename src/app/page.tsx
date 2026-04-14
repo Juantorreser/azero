@@ -1,12 +1,33 @@
+import { Navbar } from "@/components/Navbar";
+import { HeroSection } from "@/components/HeroSection";
+import { ProblemSection } from "@/components/ProblemSection";
+import { SolutionSection } from "@/components/SolutionSection";
+import { HowItWorksSection } from "@/components/HowItWorksSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
+import { PricingSection } from "@/components/PricingSection";
+import { BookingSection } from "@/components/BookingSection";
+import { TrustSection } from "@/components/TrustSection";
+import { FinalCTASection } from "@/components/FinalCTASection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
+
 export default function Home() {
   return (
-    <main className="flex min-h-full flex-1 flex-col items-center justify-center px-6 py-16">
-      <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-        WAAS
-      </h1>
-      <p className="mt-4 max-w-md text-center text-lg text-foreground/70">
-        Business landing page — content coming soon.
-      </p>
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <ProblemSection />
+        <SolutionSection />
+        <HowItWorksSection />
+        <FeaturesSection />
+        <PricingSection />
+        <BookingSection />
+        <TrustSection />
+        <FinalCTASection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </>
   );
 }
